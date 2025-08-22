@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="fixed bottom-0 left-0 w-full text-white text-center font-extrabold py-4">
+    <div className="left-0 w-full text-white text-center font-extrabold py-4">
       <footer className="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
           <span className="text-2xl text-black sm:text-center dark:text-black">
