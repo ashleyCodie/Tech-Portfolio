@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -14,14 +14,14 @@ const Footer = () => {
           </span>
           <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-black dark:text-black sm:mt-0">
             <li>
-              <a href="#" className="hover:text-blue-700 me-4 md:me-6 text-black text-2xl">
+              <Link to="/AboutMe" className="hover:text-blue-700 me-4 md:me-6 text-black text-2xl">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-700 text-black text-2xl">
+              <Link to="/ContactMe" className="hover:text-blue-700 text-black text-2xl">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
