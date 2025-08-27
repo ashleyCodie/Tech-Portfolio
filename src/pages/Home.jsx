@@ -12,7 +12,7 @@ const Home = () => {
             <img
               src={ashley}
               className="h-75 border border-purple-300 ml-40 "
-              alt="Flowbite Logo"
+              alt="Profile Pic"
             />
           </div>
           <div className="ml-37">Ashley Brooks</div>
