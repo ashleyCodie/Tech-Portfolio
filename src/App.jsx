@@ -1,16 +1,24 @@
-import { useState } from 'react'
-import Navbar from "./components/Navbar"
-import './App.css'
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import ContactMe from "./pages/ContactMe";
+import Projects from "./pages/Projects"
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
-
-
   return (
-    <>
-    <Navbar />
- <div className="flex items-center justify-center"><span className="self-center text-7xl font-semibold whitespace-nowrap dark:text-white">Full Stack Web Developer</span></div>
-    </>
-  )
+    <div className="">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/ContactMe" element={<ContactMe />} />
+        <Route path="/Projects" element={<Projects />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
