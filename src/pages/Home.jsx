@@ -1,7 +1,7 @@
 import Button from "../components/Button"
 import ashley from "../assets/images/ashley2.jpg";
 import resume from "../assets/AshleyBrooksTechResume.pdf"
-
+import GradientText from "../components/GradientText";
 const Home = () => {
   return (
     <div>
@@ -15,7 +15,16 @@ const Home = () => {
               alt="Profile Pic"
             />
           </div>
-          <div className="ml-37">Ashley Brooks</div>
+          <div className="mt-5">
+                         <GradientText
+              colors={["#020617", "#d8b4fe", "#9333ea", "#6d28d9", "#020617"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="custom-class text-center mt-10 text-5xl font-extrabold text-center"
+            >
+              Ashley Brooks
+            </GradientText>
+          </div>
           <div className="ml-47 text-3xl hover:text-purple-700 underline"><a href={resume} target="_blank" rel="noopener noreferrer">
   My Resume
 </a>
@@ -46,9 +55,15 @@ const Home = () => {
         </div>
         <div className="col-span-2 text-3xl me-30 mt-10 bg-purple-300 text-center">
           <div className="m-10">
-            <span className="self-center text-7xl font-semibold whitespace-nowrap dark:text-white">
-          Full Stack Web Developer
-        </span> <br />
+              <GradientText
+              colors={["#020617", "#d8b4fe", "#9333ea", "#6d28d9", "#020617"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="custom-class text-center mt-10 text-7xl font-extrabold text-center"
+            >
+              Full Stack Web Developer
+            </GradientText>
+         <br />
             Full Stack Web Developer ready to provide unique perspectives on how
             end-users interact with websites and software platforms. Earned a
             certificate in Full Stack Web Development from Persevere Coding

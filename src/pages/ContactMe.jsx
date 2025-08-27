@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "../components/Button";
+import GradientText from "../components/GradientText";
 
 const ContactMe = () => {
   const form = useRef();
@@ -38,7 +39,14 @@ const ContactMe = () => {
   </div> */}
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-7xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
-            Contact Me
+                         <GradientText
+                          colors={["#020617", "#d8b4fe", "#9333ea", "#6d28d9", "#020617"]}
+                          animationSpeed={3}
+                          showBorder={false}
+                          className="custom-class text-center mt-10 text-7xl font-extrabold text-center"
+                        >
+                          Contact Me
+                        </GradientText>
           </h2>
           {/* <p className="mt-2 text-lg/8 text-gray-600">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p> */}
         </div>

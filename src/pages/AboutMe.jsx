@@ -1,10 +1,17 @@
-import React from "react";
+import GradientText from "../components/GradientText";
 
 const AboutMe = () => {
   return (
     <div className="isolate bg-purple-300 px-6 py-24 sm:py-18 lg:px-8">
       <h1 className="text-7xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl text-center">
-        About Me
+                     <GradientText
+                      colors={["#020617", "#d8b4fe", "#9333ea", "#6d28d9", "#020617"]}
+                      animationSpeed={3}
+                      showBorder={false}
+                      className="custom-class text-center mt-10 text-7xl font-extrabold text-center"
+                    >
+                      About Me
+                    </GradientText>
       </h1>
       <p className="text-3xl mt-10 text-center bg-purple-300 text-center">
         Hi! I'm Ashley Brooks A.K.A Ashley Codie in the Tech World. I am a
