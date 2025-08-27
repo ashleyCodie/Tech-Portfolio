@@ -5,6 +5,7 @@ import realestate1 from "../assets/images/realestate1.jpg"
 import sparklingclean from "../assets/images/sparklingclean.PNG"
 import chachingandbling from "../assets/images/chachingandbling.jpg"
 import fororangebyorange from "../assets/images/fororangebyorange.jpg"
+import GradientText from "../components/GradientText"
 
 
 
@@ -68,7 +69,16 @@ const Projects = () => {
 ]
   return (
     <div className="bg-purple-300 px-6 py-24 sm:py-18 lg:px-8">
-    <div className="text-center text-7xl font-extrabold mb-10">Projects</div>
+    <div className="text-center text-7xl font-extrabold mb-10">
+                     <GradientText
+                      colors={["#020617", "#d8b4fe", "#9333ea", "#6d28d9", "#020617"]}
+                      animationSpeed={3}
+                      showBorder={false}
+                      className="custom-class text-center mt-10 text-7xl font-extrabold text-center"
+                    >
+                      Projects
+                    </GradientText>
+    </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 ml-20">
       {cardData.map((card) => (
         <Card
