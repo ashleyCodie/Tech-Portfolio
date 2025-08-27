@@ -1,8 +1,15 @@
+import { useState } from "react";
 import Button from "../components/Button"
+import EmailModal from "../components/EmailModal"
 import ashley from "../assets/images/ashley2.jpg";
 import resume from "../assets/AshleyBrooksTechResume.pdf"
 import GradientText from "../components/GradientText";
+
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  console.log(showModal)
+
   return (
     <div>
          <div className="">
@@ -29,7 +36,7 @@ const Home = () => {
   My Resume
 </a>
 </div>
-          <div className="ml-44"><Button text="Email Me"/></div>
+          <div className="ml-44"><Button text="Email Me" type="button" onClick={() => {console.log("ButtonCicked"); setShowModal(true)}} /></div>
           <div className=" grid grid-cols-2 gap-4">
             <div>
               {" "}
@@ -80,6 +87,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    {showModal && <EmailModal setShowModal={setShowModal} />}
     </div>
   )
 }
