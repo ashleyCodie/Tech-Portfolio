@@ -63,7 +63,7 @@ const Projects = () => {
     description: 'Sparkling Clean Home Cleaning Services, in a Front End Web Application designed for the company to be able to advertise and communicate with their clients. Sparkling Clean is a company that offers cleaning services. This website was designed so customers can view the services, pricing, packages, schedule a cleaning directly online, or contact their customer service team. This website is 100% reactive to the screen size the viewer is using whether its a phone, tablet or full size computer.',
     techUsed: "React, React State Management, Bootstrap, Bootstrap Icons, and Eslint.",
     github: "https://github.com/ashleyCodie/Sparkling-Clean",
-    link: 'https://taskmanager.com'
+    link: 'https://sparkling-clean.vercel.app'
   },
 
 ]
