@@ -76,6 +76,7 @@ const ContactMe = () => {
                   type="text"
                   name="firstName"
                   autoComplete="firstName"
+                  required
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                 />
               </div>
@@ -100,6 +101,7 @@ const ContactMe = () => {
                   type="text"
                   name="lastName"
                   autoComplete="lastName"
+                   required
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                 />
               </div>
@@ -148,6 +150,7 @@ const ContactMe = () => {
                   type="email"
                   name="email"
                   autoComplete="email"
+                   required
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                 />
               </div>
@@ -199,6 +202,7 @@ const ContactMe = () => {
                     type="text"
                     name="phoneNumber"
                     placeholder="123-456-7890"
+                     required
                     className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
                   />
                 </div>
@@ -223,6 +227,7 @@ const ContactMe = () => {
                   id="message"
                   name="message"
                   rows="4"
+                   required
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                 ></textarea>
               </div>
